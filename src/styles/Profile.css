@@ -1,0 +1,70 @@
+.page-content {
+    background-color: rgba(0, 0, 0, 0.166);
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffcfba4d;
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto; /* 中央揃え */
+  }
+  
+  .page-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: #ffcfba;
+    text-align: center;
+  }
+  
+  .intro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: top;
+    border-radius: 50%;
+    align-self: flex-end;
+  }
+  
+  .intro-text {
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .intro-text h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* PC向けのスタイル */
+  @media (min-width: 768px) {
+    .page-content {
+      width: 200%; /* 横幅を広げる */
+      max-width: none; /* 最大幅の制限を解除 */
+      margin-left: -69%; /* 左に50%ずらして中央に配置 */
+    }
+  
+    .intro-box {
+      flex-direction: row; /* 横方向に要素を並べる */
+      justify-content: space-between; /* 写真とテキストの間にスペースを作る */
+    }
+  
+    .profile-photo {
+      margin-right: 20px; /* テキストとの間にスペースを作る */
+    }
+  
+    .intro-text {
+      width: 75%; /* テキスト部分の幅を広げる */
+    }
+  }
+  

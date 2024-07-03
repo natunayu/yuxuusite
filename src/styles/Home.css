@@ -1,0 +1,87 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: flex-start; /* 左揃えにする */
+    padding-left: 20px; /* 左の余白を追加 */
+    width: auto; /* コンテンツに合わせて幅を自動調整 */
+}
+
+.normal-text, .animated-text {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0; /* デフォルトの余白をリセット */
+    line-height: 0.65; /* 行間を詰める */
+    opacity: 0;
+    animation: fadeInUp 2s ease forwards;
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+    transform: translateY(40px);
+}
+
+.normal-text {
+    color: #ffffff; /* 通常の文字色 */
+    animation-delay: 0s; /* 即時フェードイン */
+}
+
+.animated-text {
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* 白抜き文字の作成 */
+    animation-delay: 0.1s; /* 少し遅れてフェードイン */
+}
+
+
+
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* メディアクエリを追加して、画面幅に応じてフォントサイズを調整 */
+@media (max-width: 1200px) {
+    .normal-text, .animated-text {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .normal-text, .animated-text {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .normal-text, .animated-text {
+        font-size: 40px;
+    }
+}
+
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    z-index: -1;
+    /* 背景*/
+    /*background-color: rgb(10, 10, 15);*/
+    background: 
+      /* 空のグラデーション */
+      linear-gradient(
+        to top,
+        #ff9a9e 0%,
+        #efb5ac 3%,
+        #eac4b9 5%,
+        #9F98A6 10%,
+        #546786 15%,
+        #344464 20%,
+        #20304e 25%,
+        #18243c 30%,
+        #09132e 40%,
+        #030916 100%
+      );
+  }

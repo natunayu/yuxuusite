@@ -1,38 +1,135 @@
+.digital-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* ここを left: 20px; から right: 20px; に変更 */
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* 追加: メニュー内のボタンを右詰めに配置 */
+  z-index: 1000;
+}
+
+.digital-menu button {
+  background-color: rgba(0, 255, 255, 0);
+  color: #baffff;
+  border: 0px solid #baffff;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.digital-menu button:hover,
+.digital-menu button:focus,
+.digital-menu button.active {
+  background-color: rgba(0, 255, 255, 0); /* 背景色の変更 */
+  color: #ffcfba; /* テキスト色の変更 */
+  text-shadow: 0 0 5px #ffcfba, 0 0 10px #ffcfba; /* テキストの形で光らせる */
+  transform: scale(1.05);
+}
+
+.digital-menu button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .digital-menu {
+    flex-direction: column;
+    right: 10px; /* ここを left: 10px; から right: 10px; に変更 */
+  }
+
+  .digital-menu button {
+    font-size: 14px;
+    padding: 0px 0px;
+  }
+}
+
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  z-index: -1;
+  /* 背景*/
+  /*background-color: rgb(10, 10, 15);*/
+  background: 
+    /* 空のグラデーション */
+    linear-gradient(
+      to top,
+      #ff9a9e 0%,
+      #efb5ac 3%,
+      #eac4b9 5%,
+      #9F98A6 10%,
+      #546786 15%,
+      #344464 20%,
+      #20304e 25%,
+      #18243c 30%,
+      #09132e 40%,
+      #030916 100%
+    );
+}
+
+
+.sky-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  z-index: -1;
+  /* 背景*/
+  /*background-color: rgb(10, 10, 15);*/
+  background: 
+    /* 空のグラデーション */
+    linear-gradient(
+      to top,
+      #ff9a9e 0%,
+      #efb5ac 3%,
+      #eac4b9 5%,
+      #9F98A6 10%,
+      #546786 15%,
+      #344464 20%,
+      #20304e 25%,
+      #18243c 30%,
+      #09132e 40%,
+      #030916 100%
+    );
+}
+
+
+
 .App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.three-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.page-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #ffcfba;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-content {
+  background-color: rgba(0, 0, 0, 0.166);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffcfba4d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

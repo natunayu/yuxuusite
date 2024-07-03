@@ -1,0 +1,33 @@
+.cursor-circle {
+  position: fixed;
+  width: 35px; /* 初期の円の幅 */
+  height: 35px; /* 初期の円の高さ */
+  border: 2px solid white; /* 白抜き */
+  border-radius: 50%; /* 円形 */
+  pointer-events: none; /* カーソルイベントを無効に */
+  z-index: 1000; /* 上に表示 */
+  transform: translate(-50%, -50%); /* 中心位置 */
+  transition: width 0.3s, height 0.3s, background-color 0.3s, border 0.3s;
+  background-color: transparent; /* 初期は透明 */
+  will-change: transform, width, height, background-color, border;
+}
+
+.cursor-circle.hovered {
+  width: 10px; /* ホバー時の円の幅 */
+  height: 10px; /* ホバー時の円の高さ */
+  border: none; /* ホバー時は枠を消す */
+  background-color: white; /* 白で塗りつぶす */
+}
+
+.menu-button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #ffffff33;
+}
