@@ -1,29 +1,49 @@
 .hidden {
-    display: none;
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .midnight_background {
-    position: absolute;
-    top: -100%; /* 初期位置を画面外に設定 */
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #030916c5 !important;
-    transition: top 1s ease-in-out; /* アニメーションの設定 */
+  100% {
+    opacity: 1;
   }
-  
-  .midnight_background.visible {
-    top: 0; /* 画面内にスライドイン */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+  }
+}
+
+.midnight-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #030916 !important;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards; /* フェードインのアニメーション設定 */
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards; /* フェードアウトのアニメーション設定 */
+}
+
   
   /* その他のスタイル */
   .content {
     position: relative;
-    z-index: 1;
+    z-index: -100;
     /* その他のスタイル */
   }
   

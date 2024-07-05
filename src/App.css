@@ -47,31 +47,6 @@
   }
 }
 
-body{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; 
-  z-index: -1;
-  /* 背景*/
-  /*background-color: rgb(10, 10, 15);*/
-  background: 
-    /* 空のグラデーション */
-    linear-gradient(
-      to top,
-      #ff9a9e 0%,
-      #efb5ac 3%,
-      #eac4b9 5%,
-      #9F98A6 10%,
-      #546786 15%,
-      #344464 20%,
-      #20304e 25%,
-      #18243c 30%,
-      #09132e 40%,
-      #030916 100%
-    );
-}
-
 
 .sky-background {
   position: relative;
@@ -133,3 +108,11 @@ body{
 }
 
 
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Three.jsシーンの後ろに表示 */
+}

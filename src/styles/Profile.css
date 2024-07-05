@@ -10,7 +10,7 @@
   
   .page-container {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
@@ -52,6 +52,8 @@
       width: 200%; /* 横幅を広げる */
       max-width: none; /* 最大幅の制限を解除 */
       margin-left: -69%; /* 左に50%ずらして中央に配置 */
+
+      
     }
   
     .intro-box {

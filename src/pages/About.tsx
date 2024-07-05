@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/Profile.css';
-import '../styles/Midnight.css'
+import '../styles/Midnight.css';
 
 const About: React.FC = () => {
+  
 
-  return (
+  return (      
     <div className="page-container">
-      
       <div className="page-content">
       <h1>About me</h1>
         <div className="intro-box">
