@@ -10,9 +10,21 @@ const About: React.FC = () => {
       <div className="page-content">
       <h1>About me</h1>
         <div className="intro-box">
-          <img src="path/to/photo.jpg" alt="Profile Photo" className="profile-photo" />
+          <img src="/about/cat on the laptop.jpg" alt="Profile Photo" className="profile-photo" />
           <div className="intro-text">
-            <p>うおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p>
+            <h2><ruby>渡邉<rt>わたなべ</rt></ruby>&nbsp;<ruby>優太<rt>ゆうた</rt></ruby></h2>
+            <h3>東海大学大学院 <br/>
+            情報通信学研究科情報通信学専攻 大東研究室
+            
+            </h3> <p>
+            現在はセキュリティ・ネットワークに興味があります！<br/>
+            趣味でアプリを作ったり、絵を描いたり、サーバを建てたりしています。<br/>
+            <br/>
+            資格:<br/>
+            &nbsp;基本情報処理技術者<br/>
+            &nbsp;応用情報処理技術者
+
+            </p>
           </div>
         </div>
       </div>

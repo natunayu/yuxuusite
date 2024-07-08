@@ -7,8 +7,8 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ThreeScene from './components/ThreeScene';
 import CursorCircle from './components/Cursor';
-import { Loading } from './components/Loading'; // Loadingコンポーネントのインポート
-import MenuNavigation from './components/MenuNavigation'; // MenuNavigationコンポーネントのインポート
+import { Loading } from './components/Loading'; 
+import MenuNavigation from './components/MenuNavigation'; 
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('Home');

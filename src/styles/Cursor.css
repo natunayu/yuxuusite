@@ -19,6 +19,14 @@
   background-color: white; /* 白で塗りつぶす */
 }
 
+.cursor-circle.project-image-hovered {
+  width: 50px; /* project-imageホバー時の円の幅 */
+  height: 50px; /* project-imageホバー時の円の高さ */
+  border: none; /* ホバー時は枠を消す */
+  background-color: #ffcfba; /* 橙色で塗りつぶす */
+  /*box-shadow: 0 0 10px #ff9a9e; */
+}
+
 .menu-button {
   padding: 10px 20px;
   border: 2px solid white;

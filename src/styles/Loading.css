@@ -4,9 +4,9 @@
   height: 100%;
   overflow: hidden; 
   z-index: 10;
-  display: flex; /* 追加 */
-  justify-content: center; /* 追加 */
-  align-items: center; /* 追加 */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   /* 背景*/
   /*background-color: rgb(10, 10, 15);*/
   background: #030916c5 !important;
