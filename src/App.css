@@ -71,6 +71,22 @@
       #09132e 40%,
       #030916 100%
     );
+    background-image: url('../public/home/Horizon.png'); /* ここで背景画像を追加 */
+    background-repeat: no-repeat;
+    background-position: bottom; /* 画像を画面の下に配置 */
+    background-size: cover; /* 画像を画面全体に合わせる */
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100; /* sky-background よりも前面に配置 */
+  background-image: url('../public/home/Horizon.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 

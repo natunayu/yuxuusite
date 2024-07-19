@@ -20,10 +20,10 @@
 }
 
 .cursor-circle.project-image-hovered {
-  width: 50px; /* project-imageホバー時の円の幅 */
-  height: 50px; /* project-imageホバー時の円の高さ */
+  width: 60px; /* project-imageホバー時の円の幅 */
+  height: 60px; /* project-imageホバー時の円の高さ */
   border: none; /* ホバー時は枠を消す */
-  background-color: #ffcfba; /* 橙色で塗りつぶす */
+  background-color: #ffbd2d; /* 橙色で塗りつぶす */
   /*box-shadow: 0 0 10px #ff9a9e; */
 }
 

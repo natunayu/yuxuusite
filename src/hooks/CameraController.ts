@@ -33,8 +33,9 @@ export class CameraController {
     return this.camera;
   }
 
-  rotateCamera(yRotation: number = 0.01, xRotation: number = 0.01) {
+  rotateCamera(yRotation: number = 0.01, xRotation: number = -0.01) {
   this.rotation.y += yRotation * this.smoothFactor;
+  this.rotation.x += xRotation * this.smoothFactor;
   }
 }
 

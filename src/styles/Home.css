@@ -85,3 +85,16 @@ body{
         #030916 100%
       );
   }
+
+
+  .overlay-image {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100; /* sky-background よりも前面に配置 */
+    background-image: url('../../public/home/Horizon.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
